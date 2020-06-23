@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step By Step Form</title>
+
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+	<div class="mx-app-wrap">
+
+		<div id="step_by_step">
+		
+			<mx_step_by_step_form
+				@mx_send_data="mxSendData"
+			></mx_step_by_step_form>
+
+			<mx-popup
+				v-if="setContent"
+				:content="setContent"
+			></mx-popup>
+
+		</div>
+		
+	</div>	
+
+	<!-- development version, includes helpful console warnings -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+	
+	<script src="./js/vue.dev.js"></script>
+	<script src="./js/main.js"></script>
+
+	
+</body>
+</html>

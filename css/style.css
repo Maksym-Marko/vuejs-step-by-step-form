@@ -1,0 +1,57 @@
+body {
+	font-family: 'OpenSans';
+	background-color: #fafafa;
+}
+.mx-app-wrap {
+	width: 100%;
+	max-width: 700px;
+	margin: 0px auto;
+}
+#step_by_step {
+	background-color: #fff;
+	-webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.17);
+	-moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.17);
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.17);
+	border-radius: 4px;
+	padding: 10px;
+}
+
+/*navigation*/
+ul.mx-step-by-step-navigation {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+	justify-content: space-around;
+}
+.mx-current-ster {
+	text-decoration: underline;
+}
+
+/*popup*/
+.mx-popup {
+    position: absolute;
+    background: rgba(39, 39, 39, 0.54);
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mx-popup span {
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/*notification*/
+.mx-notification {
+	color: red;
+}
